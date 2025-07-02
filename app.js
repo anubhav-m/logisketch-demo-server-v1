@@ -10,7 +10,7 @@ const app = express();
 
 //Temporary fix
 app.use(cors({
-  origin: 'https://anubhav-m.github.io/logisketch-demo/', 
+  origin: 'https://anubhav-m.github.io', 
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
