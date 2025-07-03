@@ -3,13 +3,9 @@ import { ARCJET_KEY, NODE_ENV } from "./env.js";
 
 let allowed;
 
-if (NODE_ENV === "development"){
-  allowed = ["CATEGORY:SEARCH_ENGINE", "POSTMAN"]
-}
 
-else{
-  allowed = ["CATEGORY:SEARCH_ENGINE"]
-}
+allowed = ["CATEGORY:SEARCH_ENGINE", "POSTMAN", "CURL"]
+
 
 export const aj = arcjet({
   key: ARCJET_KEY,
